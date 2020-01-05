@@ -1,37 +1,62 @@
-Welcome to Glitch
-=================
+# Javascript Click Checkboxes
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
+Wes Bos Youtube Tutorial: [JavaScript Array Cardio Practice - Day 1 — #JavaScript30 4/30](https://www.youtube.com/watch?v=HB1ZC7czKRs&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=4).
 
 
-Your Project
-------------
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-### ← README.md
+## Table of contents
 
-That's this file, where you can tell people what your cool website does and how you built it.
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
 
-### ← index.html
+## General info
 
-Where you'll write the content of your website. 
+* Tutorial Code using javascript array methods.
 
-### ← style.css
+## Screenshots
 
-CSS files add styling rules to your content.
+![Example screenshot](./img/array.png).
+![Example screenshot](./img/boulevard.png).
 
-### ← script.js
+## Technologies
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+* Ran in Google Chrome browser with: [Javascript engine V8 7.9.317.32 for Windows (x64)](https://v8.dev/).
 
-### ← assets
+## Setup
 
-Drag in `assets`, like images or music, to add them to your project
+* Open index.html in browser. If any code is changed the browser needs to be refreshed. Some code is commented out as it is meant to be used with a particular web link.
 
-Made by [Glitch](https://glitch.com/)
--------------------
+## Code Examples
 
-\ ゜o゜)ノ
+* Sort method used to order an array by birth date.
+
+```javascript
+// 5. Sort the inventors by years lived
+const yearsLived = inventors.sort((a,b) => (a.passed - a.year) > (b.passed - b.year)? 1 : -1);
+console.table(yearsLived);
+```
+
+## Features
+
+*  Includes code to filter DOM elements for key words.
+
+## Status & To-Do List
+
+* Status: Working.
+
+* To-Do: Nothing.
+
+## Inspiration
+
+* Wes Bos Youtube Tutorial: [JavaScript Array Cardio Practice - Day 1 — #JavaScript30 4/30](https://www.youtube.com/watch?v=HB1ZC7czKRs&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=4).
+
+## Contact
+
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!

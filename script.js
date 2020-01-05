@@ -17,37 +17,40 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
 const fifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year <1600)                                
-//console.table(fifteen);
+console.table('Array filtered for birth year between 1500 & 1600', fifteen);
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
-//console.log(fullNames);
+console.log('Array with map function to return full name', fullNames);
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 const sorted = inventors.sort((a, b) => a.year > b.year? 1 : -1);
-//console.table(sorted);
+console.table(sorted);
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
 const totalYears = inventors.reduce((total, inventor) => {
   return total + (inventor.passed - inventor.year);
 },0);
-//console.log(totalYears);
+console.log('Reduce method used to derive total life years of all inventors: ', totalYears);
 
 // 5. Sort the inventors by years lived
 const yearsLived = inventors.sort((a,b) => (a.passed - a.year) > (b.passed - b.year)? 1 : -1);
-//console.table(yearsLived);
+console.table(yearsLived);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-//const category = document.querySelector('.mw-category');
-//const links = Array.from(category.querySelectorAll('a'));
-//const de = links
-//              .map(link => link.textContent)
-//             .filter(streetName => streetName.includes('de'));
-//console.table(de);
+if (document.querySelector('.mw-category')) {
+  const category = document.querySelector('.mw-category');
+  const links = Array.from(category.querySelectorAll('a'));
+  const de = links
+               .map(link => link.textContent)
+              .filter(streetName => streetName.includes('de'));
+  console.table(de);
+}
+
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
@@ -56,7 +59,7 @@ const alphabet = people.sort((lastOne, nextOne) => {
   const [bLast, bFirst] = nextOne.split(', ');
   return aLast > bLast ? 1 : -1;
 });
-//console.log(alphabet);
+console.log(alphabet);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
