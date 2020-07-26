@@ -1,11 +1,10 @@
-# Javascript Click Checkboxes
+# :zap: Javascript Click Checkboxes
 
-Wes Bos Youtube Tutorial: [JavaScript Array Cardio Practice - Day 1 — #JavaScript30 4/30](https://www.youtube.com/watch?v=HB1ZC7czKRs&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=4).
-
+* Wes Bos Youtube Tutorial: [JavaScript Array Cardio Practice - Day 1 — #JavaScript30 4/30](https://www.youtube.com/watch?v=HB1ZC7czKRs&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=4).
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -16,24 +15,24 @@ Wes Bos Youtube Tutorial: [JavaScript Array Cardio Practice - Day 1 — #JavaScr
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
+## :books: General info
 
 * Tutorial Code using javascript array methods.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/array.png).
 ![Example screenshot](./img/boulevard.png).
 
-## Technologies
+## :signal_strength: Technologies
 
-* Ran in Google Chrome browser with: [Javascript engine V8 7.9.317.32 for Windows (x64)](https://v8.dev/).
+* Ran in Google Chrome browser with: [Javascript engine V8 for Windows (x64)](https://v8.dev/).
 
-## Setup
+## :floppy_disk: Setup
 
 * Open index.html in browser. If any code is changed the browser needs to be refreshed. Some code is commented out as it is meant to be used with a particular web link.
 
-## Code Examples
+## :computer: Code Examples
 
 * Sort method used to order an array by birth date.
 
@@ -43,20 +42,19 @@ const yearsLived = inventors.sort((a,b) => (a.passed - a.year) > (b.passed - b.y
 console.table(yearsLived);
 ```
 
-## Features
+## :cool: Features
 
 *  Includes code to filter DOM elements for key words.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: Working.
-
 * To-Do: Nothing.
 
-## Inspiration
+## :clap: Inspiration
 
 * Wes Bos Youtube Tutorial: [JavaScript Array Cardio Practice - Day 1 — #JavaScript30 4/30](https://www.youtube.com/watch?v=HB1ZC7czKRs&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=4).
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
