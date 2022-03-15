@@ -44,12 +44,11 @@ console.table('inventors sorted by years lived', yearsLived);
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 if (document.querySelector('.mw-category')) {
   const category = document.querySelector('.mw-category');
-  console.log('category: ', category);
   const links = Array.from(category.querySelectorAll('a'));
   const de = links
                .map(link => link.textContent)
               .filter(streetName => streetName.includes('de'));
-  console.table('list of Boulevards in Paris that contain de anywhere in the name', de);
+  console.table(de);
 }
 
 
